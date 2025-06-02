@@ -1,0 +1,5 @@
+curl --path-as-is -i -s -k -X $'POST' \
+    -H $'Host: altoro.testfire.net' -H $'User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:139.0) Gecko/20100101 Firefox/139.0' -H $'Accept: text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8' -H $'Accept-Language: en-US,en;q=0.5' -H $'Accept-Encoding: gzip, deflate, br' -H $'Content-Type: application/x-www-form-urlencoded' -H $'Content-Length: 77' -H $'Origin: http://altoro.testfire.net' -H $'Connection: keep-alive' -H $'Referer: http://altoro.testfire.net/bank/transfer.jsp' -H $'Upgrade-Insecure-Requests: 1' -H $'Priority: u=0, i' \
+    -b $'JSESSIONID=FD011FA2A6B46FDA3CE7143B2F7AD6BC; AltoroAccounts=ODAwMDAwfkNvcnBvcmF0ZX4tMS4xMTA3MjI2MTYwNzM5RTExfDgwMDAwMX5DaGVja2luZ34xLjExMTI0NzIxNTAxNDRFMTF8' \
+    --data-binary $'fromAccount=800000&toAccount=800001&transferAmount=10&transfer=Transfer+Money' \
+    $'http://altoro.testfire.net/bank/doTransfer'
